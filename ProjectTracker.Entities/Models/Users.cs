@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProjectTracker.Entities.Models
 {
-    public class Boards
+    public class Users
     {
         public int Id { get; set; }
-        public string Name { get; set; } = String.Empty;
+        public string FirstName { get; set; } = String.Empty;
+        public string LastName { get; set; } = String.Empty;
     }
 }
