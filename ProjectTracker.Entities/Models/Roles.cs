@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace ProjectTracker.Entities.Models
 {
-    public class Tickets : BaseEntity
+    public class Roles : BaseEntity
     {
+        public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public int Priority { get; set; }
-        public int Status { get; set; }
-        public int RequestedBy { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public int UserId { get; set; }
+
     }
 }
