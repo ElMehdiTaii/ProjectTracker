@@ -2,7 +2,7 @@
 
 namespace ProjectTracker.Mvc.Controllers
 {
-    public class DashboardController : Controller
+    public class DashboardsController : Controller
     {
         public IActionResult Index()
         {
