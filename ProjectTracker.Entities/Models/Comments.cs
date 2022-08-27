@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjectTracker.Entities.Models
 {
-    public class ProjectComments : BaseEntity
+    public class Comments : BaseEntity
     {
         public string Comment { get; set; } = string.Empty;
         public int SubmitedBy { get; set; }

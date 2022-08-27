@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace ProjectTracker.Repositories
 {
-    public class BoardRepository : RepositoryBase<Boards>, IBoardRepository
+    public class UserRepository : RepositoryBase<Users>, IUserRepository
     {
-        public BoardRepository(RepositoryContext repositoryContext) : base(repositoryContext)
+        public UserRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
     }

@@ -1,9 +1,25 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\Message\" />
+    <Folder Include="DTOs\Board\" />
+    <Folder Include="DTOs\Company\" />
+    <Folder Include="DTOs\Comment\" />
+    <Folder Include="DTOs\User\" />
+    <Folder Include="DTOs\Ticket\" />
+    <Folder Include="DTOs\Project\" />
+    <Folder Include="DTOs\Role\" />
+    <Folder Include="DTOs\Task\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+  </ItemGroup>
 
 </Project>

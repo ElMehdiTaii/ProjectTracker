@@ -1,47 +1,13 @@
 ﻿using ProjectTracker.Contracts;
+using ProjectTracker.Entities.DBContext;
+using ProjectTracker.Entities.Models;
 
 namespace ProjectTracker.Repositories
 {
-    public class TaskRepository : ITaskRepository
+    public class TaskRepository : RepositoryBase<Tasks>, ITaskRepository
     {
-        public Task<int> Add(Task entity)
+        public TaskRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> Add(IEnumerable<Task> entities)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<Task>> All()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Task> FindAsync(object pksFields)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<IEnumerable<Task>> GetData(string qry, object parameters)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> InstertOrUpdate(Task entity, object pks)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Remove(object key)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> Update(Task entity, object pks)
-        {
-            throw new NotImplementedException();
         }
     }
 }

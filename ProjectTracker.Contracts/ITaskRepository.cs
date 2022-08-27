@@ -1,13 +1,9 @@
-﻿using ProjectTracker.Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using ProjectTracker.Entities.Models;
 
 namespace ProjectTracker.Contracts
 {
-    public interface ITaskRepository : IGenericRepository<Tasks>
+    public interface ITaskRepository : IRepositoryBase<Tasks>
     {
     }
 }
